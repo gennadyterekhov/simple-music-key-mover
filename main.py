@@ -50,6 +50,8 @@ class MusicalKey:
 
 class MusicalNote:
     useScientificNotation = False
+    useRussianName = False
+    useKalimbaNumber = False
     scientificPitchNotationOffset = 3
 
     def __init__(self, name: str, duration=0.25, octave=1):
@@ -71,17 +73,21 @@ class MusicalNote:
         if self.duration >= 0.5:
             spaces = 3
 
-        spaceSymbol = '_'
+        spaceSymbol = ' '
         if self.name == NoteName.PAUSE:
             # because the note will take up one char space regardless of duration, so mst the pause too
-            return '_' + spaces * spaceSymbol
-        # nm = NoteName.nameToRussianName[self.name]
-        nm = self.name
-        return f'{nm}' + (spaces * spaceSymbol)
+            return ' ' + spaces * spaceSymbol
+        
+        name = self.name
+        if self.useRussianName:
+            name = NoteName.nameToRussianName[self.name]
+        if self.useKalimbaNumber:
+            name = NoteName.nameToOrderMap[self.name] + 1
 
         if self.octave == 1:
-            return f'{nm}' + (spaces * spaceSymbol)
-        return f'{nm}{self.octave}' + (spaces*spaceSymbol)
+            return f'{name} ' + (spaces * spaceSymbol)
+        octaveDots = (self.octave-1) * '°' 
+        return f'{name}{octaveDots}' + (spaces*spaceSymbol)
 
 
 class ScaleDegree:
@@ -268,8 +274,9 @@ class NoteToScaleConverter:
 
         order = (orderInCMajor - differenceWithCMajor + 7) % 7
 
+        octave = note.octave + (orderInCMajor - differenceWithCMajor + 7) // 7
         # +1 because we were dealing with indices before
-        return ScaleDegree(order + 1, key=originalKey, duration=note.duration, octave=note.octave)
+        return ScaleDegree(order + 1, key=originalKey, duration=note.duration, octave=octave)
 
 
 class ScaleToNoteConverter:
@@ -325,6 +332,7 @@ def outputResultNotes(notes: list, tempo: dict):
             barsOnCurrentLine += 1
         if barsOnCurrentLine == tempo['barsPerLine']:
             barsOnCurrentLine = 0
+            print()
             print()
     print()
 

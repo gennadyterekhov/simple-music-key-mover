@@ -1,7 +1,0 @@
-GEDC    |    GGG    |    GEDC    |    A    |    
-AFED    |    B    |    GGFD    |    E    |    
-GEDC    |    GGG    |    GEDC    |    AA    |    
-AFED    |    GGGG    |    AGFD    |    C    |    
-EEE     |    EEE    |    EGCD    |    E    |    
-FFFF    |    FEEEE    |    EDDE    |    DG    |    
-FFFF    |    FEEEE    |    GGFD    |    C    |
