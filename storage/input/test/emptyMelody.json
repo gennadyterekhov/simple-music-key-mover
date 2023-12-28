@@ -1,0 +1,24 @@
+{
+    "targetKey": {
+        "noteName": "C",
+        "isMajor": true,
+        "isFlat": false,
+        "isSharp": false
+    },
+    "song": {
+        "tempo": {
+            "number": 4,
+            "duration": 0.25,
+            "barsPerLine": 4
+        },
+        "melody": {
+            "key": {
+                "noteName": "F",
+                "isMajor": true,
+                "isFlat": false,
+                "isSharp": false
+            },
+            "notes": []
+        }
+    }
+}

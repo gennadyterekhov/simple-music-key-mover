@@ -1,9 +1,46 @@
 from src.entities.noteName import NoteName
 from src.entities.musicalKey import MusicalKey, KeyCMajor
+from src.entities.scaleDegree import ScaleDegree
+from src.entities.songTransformation import SongTransformation
 from src.entities.musicalNote import MusicalNote
 from src.services.noteToScaleConverter import NoteToScaleConverter
 from src.services.scaleToNoteConverter import ScaleToNoteConverter
-from src.entities.scaleDegree import ScaleDegree
+from src.services.inputToSongTransformationConverter import InputToSongTransformationConverter
+import pytest
+
+
+class TestInputToSongTransformationConverter:
+    def testCannotConvertCompletelyEmptyFile(self):
+        with pytest.raises(Exception):
+            pathToSongFile = '/Users/gena/code/projects/simple-music-key-mover/storage/input/test/empty.json'
+
+            itstConverter = InputToSongTransformationConverter(pathToSongFile)
+            songTransformation = itstConverter.getSongTransformationFromInput()
+
+
+    def testCanConvertNonSensicalValues(self):
+        pathToSongFile = '/Users/gena/code/projects/simple-music-key-mover/storage/input/test/nonsense.json'
+
+        itstConverter = InputToSongTransformationConverter(pathToSongFile)
+        songTransformation = itstConverter.getSongTransformationFromInput()
+        assert (isinstance(songTransformation, SongTransformation))
+        assert (len(songTransformation.song.melody.notes) == 0)
+        assert (isinstance(songTransformation.song.melody.key, MusicalKey))
+        assert (songTransformation.song.melody.key.noteName == 'lorem ipsum')
+        assert (songTransformation.targetKey.noteName == 'howdy pardner')
+
+    def testCanConvertEmptyMelody(self):
+        # sorry I dont understand how it works
+        # pathToSongFile = '../../storage/input/test/emptyMelody.json'
+        pathToSongFile = '/Users/gena/code/projects/simple-music-key-mover/storage/input/test/emptyMelody.json'
+
+        itstConverter = InputToSongTransformationConverter(pathToSongFile)
+        songTransformation = itstConverter.getSongTransformationFromInput()
+        assert (isinstance(songTransformation, SongTransformation))
+        assert (len(songTransformation.song.melody.notes) == 0)
+        assert (isinstance(songTransformation.song.melody.key, MusicalKey))
+        assert (songTransformation.song.melody.key.noteName == NoteName.FA)
+        assert (songTransformation.targetKey.noteName == NoteName.DO)
 
 
 class TestNoteToScaleConverter:
