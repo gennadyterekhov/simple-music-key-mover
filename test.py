@@ -1,4 +1,9 @@
-from main import NoteToScaleConverter, KeyCMajor, MusicalNote, NoteName, ScaleDegree, ScaleToNoteConverter, MusicalKey
+from src.entities.noteName import NoteName
+from src.entities.musicalKey import MusicalKey, KeyCMajor
+from src.entities.musicalNote import MusicalNote
+from src.services.noteToScaleConverter import NoteToScaleConverter
+from src.services.scaleToNoteConverter import ScaleToNoteConverter
+from src.entities.scaleDegree import ScaleDegree
 
 
 class TestNoteToScaleConverter:
