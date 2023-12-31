@@ -20,12 +20,8 @@ class Arranger:
 
         notes = songTransformation.song.melody.notes
         tempo = songTransformation.song.tempo
-        self.outputResultNotes(notes, tempo)
 
-        originalKey = KeyFMajor()
-        targetKey = KeyCMajor()
-
-        targetKeyNotes = self.changer.changeKey(originalKey, targetKey, notes)
+        targetKeyNotes = self.changer.changeKey(songTransformation.song.melody.key, songTransformation.targetKey, notes)
 
         self.outputResultNotes(targetKeyNotes, tempo)
 

@@ -1,0 +1,510 @@
+{
+    "targetKey": {
+        "noteName": "C",
+        "isMajor": true,
+        "isFlat": false,
+        "isSharp": false
+    },
+    "song": {
+        "tempo": {
+            "number": 4,
+            "duration": 0.25,
+            "barsPerLine": 4
+        },
+        "melody": {
+            "key": {
+                "noteName": "F",
+                "isMajor": true,
+                "isFlat": false,
+                "isSharp": false
+            },
+            "notes": [
+                {
+                    "name": "C",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "A",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "G",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "F",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "C",
+                    "duration": 0.5,
+                    "octave": 1
+                },
+                {
+                    "name": "Pause",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "C",
+                    "duration": 0.125,
+                    "octave": 1
+                },
+                {
+                    "name": "C",
+                    "duration": 0.125,
+                    "octave": 1
+                },
+                {
+                    "name": "C",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "A",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "G",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "F",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "D",
+                    "duration": 0.5,
+                    "octave": 1
+                },
+                {
+                    "name": "Pause",
+                    "duration": 0.5,
+                    "octave": 1
+                },
+                {
+                    "name": "D",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "B",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "A",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "G",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "E",
+                    "duration": 0.5,
+                    "octave": 1
+                },
+                {
+                    "name": "Pause",
+                    "duration": 0.5,
+                    "octave": 1
+                },
+                {
+                    "name": "C",
+                    "duration": 0.25,
+                    "octave": 2
+                },
+                {
+                    "name": "C",
+                    "duration": 0.25,
+                    "octave": 2
+                },
+                {
+                    "name": "B",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "G",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "A",
+                    "duration": 0.5,
+                    "octave": 1
+                },
+                {
+                    "name": "Pause",
+                    "duration": 0.5,
+                    "octave": 1
+                },
+                {
+                    "name": "C",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "A",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "G",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "F",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "C",
+                    "duration": 0.5,
+                    "octave": 1
+                },
+                {
+                    "name": "Pause",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "C",
+                    "duration": 0.125,
+                    "octave": 1
+                },
+                {
+                    "name": "C",
+                    "duration": 0.125,
+                    "octave": 1
+                },
+                {
+                    "name": "C",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "A",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "G",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "F",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "D",
+                    "duration": 0.5,
+                    "octave": 1
+                },
+                {
+                    "name": "Pause",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "D",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "D",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "B",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "A",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "G",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "C",
+                    "duration": 0.25,
+                    "octave": 2
+                },
+                {
+                    "name": "C",
+                    "duration": 0.25,
+                    "octave": 2
+                },
+                {
+                    "name": "C",
+                    "duration": 0.25,
+                    "octave": 2
+                },
+                {
+                    "name": "C",
+                    "duration": 0.25,
+                    "octave": 2
+                },
+                {
+                    "name": "D",
+                    "duration": 0.25,
+                    "octave": 2
+                },
+                {
+                    "name": "C",
+                    "duration": 0.25,
+                    "octave": 2
+                },
+                {
+                    "name": "B",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "G",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "F",
+                    "duration": 0.5,
+                    "octave": 1
+                },
+                {
+                    "name": "Pause",
+                    "duration": 0.5,
+                    "octave": 1
+                },
+                {
+                    "name": "A",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "A",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "A",
+                    "duration": 0.5,
+                    "octave": 1
+                },
+                {
+                    "name": "A",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "A",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "A",
+                    "duration": 0.5,
+                    "octave": 1
+                },
+                {
+                    "name": "A",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "C",
+                    "duration": 0.25,
+                    "octave": 2
+                },
+                {
+                    "name": "F",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "G",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "A",
+                    "duration": 0.5,
+                    "octave": 1
+                },
+                {
+                    "name": "Pause",
+                    "duration": 0.5,
+                    "octave": 1
+                },
+                {
+                    "name": "B",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "B",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "B",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "B",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "B",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "A",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "A",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "A",
+                    "duration": 0.125,
+                    "octave": 1
+                },
+                {
+                    "name": "A",
+                    "duration": 0.125,
+                    "octave": 1
+                },
+                {
+                    "name": "A",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "G",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "G",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "A",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "G",
+                    "duration": 0.5,
+                    "octave": 1
+                },
+                {
+                    "name": "C",
+                    "duration": 0.5,
+                    "octave": 1
+                },
+                {
+                    "name": "B",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "B",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "B",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "B",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "B",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "A",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "A",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "A",
+                    "duration": 0.125,
+                    "octave": 1
+                },
+                {
+                    "name": "A",
+                    "duration": 0.125,
+                    "octave": 1
+                },
+                {
+                    "name": "C",
+                    "duration": 0.25,
+                    "octave": 2
+                },
+                {
+                    "name": "C",
+                    "duration": 0.25,
+                    "octave": 2
+                },
+                {
+                    "name": "B",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "G",
+                    "duration": 0.25,
+                    "octave": 1
+                },
+                {
+                    "name": "F",
+                    "duration": 0.5,
+                    "octave": 1
+                },
+                {
+                    "name": "Pause",
+                    "duration": 0.5,
+                    "octave": 1
+                }
+            ]
+        }
+    }
+}

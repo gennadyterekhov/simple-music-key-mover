@@ -3,10 +3,12 @@
 ignores sharps and flats
 incorrectly updates octave number
 
-# how to run
-you have to hardcode the melody in main.py and then  
+# how to use
+encode desired melody in `storage/input/song.json`  
 
-python3 main.py
+run:
+`python3 main.py`
+
 
 # how to run tests
 
