@@ -1,7 +1,9 @@
-from src.entities.musicalKey import MusicalKey, KeyCMajor, KeyFMajor
-from src.entities.musicalNote import MusicalNote
+from src.services.inputToSongTransformationConverter import InputToSongTransformationConverter
+from src.services.keyChanger import KeyChanger
 from src.services.noteToScaleConverter import NoteToScaleConverter
 from src.services.scaleToNoteConverter import ScaleToNoteConverter
+from src.services.arranger import Arranger
+from src.entities.musicalNote import MusicalNote
 
 
 config = {
@@ -145,66 +147,18 @@ config = {
 }
 
 
-diContainer = {
-    'services': {
-
-    },
-}
-
-
-def changeKey(originalKey: MusicalKey, targetKey: MusicalKey, notes: list) -> list:
-    melodyAsSteps = diContainer['services']['NoteToScaleConverter'].convertMelodyToSteps(
-        notes, originalKey)
-    melodyInTargetKey = diContainer['services']['ScaleToNoteConverter'].convertStepsToKey(
-        melodyAsSteps, targetKey)
-
-    return melodyInTargetKey
-
-
-def arrange():
-    notes = config['notes']
-    tempo = config['tempo']
-    outputResultNotes(notes, tempo)
-
-    originalKey = KeyFMajor()
-    targetKey = KeyCMajor()
-
-    targetKeyNotes = changeKey(originalKey, targetKey, notes)
-
-    outputResultNotes(targetKeyNotes, tempo)
-
-
-def outputResultNotes(notes: list, tempo: dict):
-    currentBarDuration = 0
-    barsOnCurrentLine = 0
-    fullBarDuration = tempo['number'] * tempo['duration']
-    for n in (notes):
-        printNote(n)
-        currentBarDuration += n.duration
-        if currentBarDuration == fullBarDuration:
-            print('    |    ', end='')
-            currentBarDuration = 0
-            barsOnCurrentLine += 1
-        if barsOnCurrentLine == tempo['barsPerLine']:
-            barsOnCurrentLine = 0
-            print()
-            print()
-    print()
-
-
-def printNote(note: MusicalNote):
-    print(note, end='')
-
-
-def setUpDiContainer():
-    global diContainer
-    diContainer['services']['NoteToScaleConverter'] = NoteToScaleConverter()
-    diContainer['services']['ScaleToNoteConverter'] = ScaleToNoteConverter()
+def getArranger():
+    inputToSongTransformationConverter = InputToSongTransformationConverter()
+    noteToScaleConverter = NoteToScaleConverter()
+    scaleToNoteConverter = ScaleToNoteConverter()
+    keyChanger = KeyChanger(noteToScaleConverter, scaleToNoteConverter)
+    arranger = Arranger(inputToSongTransformationConverter, keyChanger)
+    return arranger
 
 
 def main():
-    setUpDiContainer()
-    arrange()
+    arranger = getArranger()
+    arranger.arrange()
 
 
 if __name__ == '__main__':

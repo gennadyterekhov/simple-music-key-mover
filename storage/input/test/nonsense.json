@@ -1,0 +1,24 @@
+{
+    "targetKey": {
+        "noteName": "howdy pardner",
+        "isMajor": true,
+        "isFlat": false,
+        "isSharp": false
+    },
+    "song": {
+        "tempo": {
+            "number": 400,
+            "duration": 3.14159,
+            "barsPerLine": -5
+        },
+        "melody": {
+            "key": {
+                "noteName": "lorem ipsum",
+                "isMajor": "tRuE",
+                "isFlat": "also a string",
+                "isSharp": false
+            },
+            "notes": []
+        }
+    }
+}
